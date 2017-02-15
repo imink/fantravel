@@ -14,8 +14,8 @@ use \Mail;
 
 class ContactController extends Controller
 {
-    const EMAIL = 'dave_liuyao@163.com';
-    // const EMAIL = 'sunshine1029cn@163.com';
+    // const EMAIL = 'dave_liuyao@163.com';
+    const EMAIL = 'sunshine1029cn@163.com';
 
     public function getContact() {
    	    return view('contact');
