@@ -1,0 +1,13 @@
+body {
+	background-image: url('../img/bg.jpg');
+}
+
+.logo {
+
+}
+
+.logo img{
+    display:block;
+    margin: 0 auto;
+    width: 200px;
+}
