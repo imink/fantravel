@@ -2,10 +2,9 @@ body {
 	background-image: url('../img/bg.jpg');
 }
 
-.logo {
-
+.content {
+	margin: 20 auto;
 }
-
 .logo img{
     display:block;
     margin: 0 auto;

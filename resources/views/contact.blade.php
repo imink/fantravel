@@ -4,16 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="shortcut icon" href="{{URL::asset('favicon.ico')}} type="image/x-icon">
         <title>FanTravel 出行意向登记</title>
 
         <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
    
         <link rel="stylesheet" href="{{URL::asset('css/custom.css')}}">
+
+
+        <link rel="apple-touch-icon" sizes="180x180" href="{{URL::asset('apple-touch-icon.png')}}">
+        <link rel="icon" type="image/png" href="{{URL::asset('favicon-32x32.png')}}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{URL::asset('favicon-16x16.png')}}" sizes="16x16">
+        <link rel="manifest" href="{{URL::asset('manifest.json')}}">
+        <link rel="mask-icon" href="{{URL::asset('safari-pinned-tab.svg')}}" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">        
     </head>
 
     <body>
+    <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+     <img src="{{URL::asset('img/logo.png')}}" width='700'>
+    </div>
    <div class="container">
         <div class="row logo">
             <img  class="img-responsive center-block" src="{{URL::asset('img/logo.png')}}" alt="FanTravel LOGO">
@@ -24,7 +35,7 @@
 
             </div>
         </div><!--//row-->
-        <div class="row text-center">
+        <div class="row text-center content">
             <div class="contact-form col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
                 @if(Session::has('success'))
                     <div>
@@ -84,7 +95,7 @@
                         <textarea id="others" class="form-control" rows="6"  name="others" placeholder="其他要求（可选）"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-lg btn-primary">提交</button>
+                    <button type="submit" class="btn btn-primary">提交</button>
 
                 </form>
 
